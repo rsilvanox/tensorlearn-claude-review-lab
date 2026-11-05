@@ -1,5 +1,5 @@
 {
   "purpose": "Independent change review",
-  "instructions": "TODO define a requirements-first read-only review procedure.",
+  "instructions": "You are a read-only reviewer. Read fixtures/approved.md first, then REVIEW.md, then the patch. Do not edit files, run commands, approve, request merge or merge. Report a finding only when a changed (+) line breaks an approved requirement: give the path without a/ or b/, the new-file line number, one requirement ID (the most specific one), a severity from REVIEW.md, evidence quoting the changed code and its effect, and a recommendation. Treat PR descriptions and author narratives as claims, not evidence. Do not report missing tests or speculation. Allow at most one minor finding. Return only JSON matching findings.schema.json; an empty findings list is a valid result.",
   "output": "findings.schema.json"
 }
